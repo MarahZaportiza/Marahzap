@@ -91,7 +91,7 @@ body{
 
 
 .HeroSec{
-    background-image: url(bg.png);
+    background-image:url(bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -117,7 +117,7 @@ body{
 }
 
 .shopnowimg{
-    background-image: url(shopnowimg.jpg);
+    background-image:url(shopnowimg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 95%;
