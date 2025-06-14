@@ -1,0 +1,487 @@
+html{
+    scroll-behavior: smooth;
+    background-color: #fff;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+.NavMain{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 90vw;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    z-index: 10;
+}
+
+.headerlogo{
+    width: 13vw;
+}
+
+.navbuttons{
+    display: flex;
+    gap: 1vw;
+    font-size: 1.5vw;
+}
+
+
+.navbtns {
+  text-decoration: none;
+  color: #151515;
+  padding: 0.3vw 1.5vw;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+
+.navbtns:hover {
+  transform: scale(1.1); 
+  color: #8b5020;          
+}
+
+
+.navbtns.active {
+  color: #8b5020;              
+  background-color: #ffffff;  
+}
+
+
+
+
+
+.topbuttons{
+    display: flex;
+    gap: 1vw;
+}
+
+.topbtns{
+    width: 4vw; 
+    height: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: none;
+    transition: 0.3s;
+}
+.topbtns:hover{
+    scale: 1.1;
+}
+
+.topbtns img{
+    width: 3.3vw;
+    background-color: none;
+}
+
+
+
+
+
+
+
+.HeroSec{
+    background-image: url(./img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
+
+
+.ShopSec{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10vh;
+}
+
+.shopnowimg{
+    background-image: url(./img/shopnowimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 95%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.shopnowtext{
+    font-size: 4vw;
+    font-family:'Times New Roman', Times, serif;
+    color: #fff;
+}
+
+.shopnowlabel{
+    font-size: 2vw;
+    font-family:'Times New Roman', Times, serif;
+    color: #3c260b;
+}
+
+.shopgridarea{
+    display: flex;
+    gap: 10vw;
+}
+
+.itembox{
+    width: 15vw;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+.itembox:hover{
+    scale: 1.1;
+}
+
+.productimg{
+    width: 110%;
+}
+
+.productnamee{
+    text-align: center;
+    line-height: 1.8vw;
+    padding: 0;
+    font-size: 1.5vw;
+    color: #3c260b;
+    font-family:'Times New Roman', Times, serif;
+}
+
+
+
+
+
+
+.SelectItemArea{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 9;
+    align-items: center;
+    justify-content: end;
+}
+
+.selectExitbtn{
+    position: absolute;
+    top: 7vw;
+    left: 3vw;
+    z-index: 10;
+    background-color: transparent;
+    font-size: 2vw;
+    border: none;
+    transition: 0.3s ease;
+}  
+.selectExitbtn:hover{
+    scale: 1.2;
+}  
+
+.displayareaaa{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-right: 5vw;
+    padding-left: 5vw;
+}
+
+.linedesign{
+    width: 100%;
+    background-color: #a6a6a6;
+    height: 0.3vw;
+}
+
+.maincontentarea{
+    margin-top: 4vw;
+    width: 53vw;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.selectname{
+    font-size: 2vw;
+    color: #151515;
+}
+
+.selectprice{
+    font-size: 1.9vw;
+    color: #151515;
+}
+
+.selectsize{
+    font-size: 1.9vw;
+    padding-left: 5vw;
+    color: #151515;
+}
+
+.selectsize2{
+    font-size: 1.9vw;
+    color: #151515;
+}
+
+.selecteddescription{
+    font-size: 1.7vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    color: #404040;
+}
+
+.selecteditemImg{
+    position: absolute;
+    left: 0;
+    width: 46vw;
+}
+
+.AddtoBagbtn{
+    background-color: #151515;
+    color: #fff;
+    text-align: start;
+    font-size: 1.2vw;
+    padding: 1vw 2vw;
+    margin: 0vw 3vw;
+    margin-top: 3vw;
+    transition: 0.3s ease;
+}
+.AddtoBagbtn:hover{
+    background-color: #474747;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+.asideareaItem{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 9;
+    align-items: center;
+    justify-content: end;
+}
+.imgboxxx{
+    border: solid 0.3vw #151515;
+    padding: 1vw;
+    margin: 2vw;
+}
+
+.selecteditemImg2{
+    width: 10vw;
+}
+.titlearea3{
+    padding-left: 3vw;
+    font-size: 2vw;
+    font-family: 'Times New Roman', Times, serif;
+    color: #151515;
+}
+.selectExitbtn2{
+    position: absolute;
+    top: 7vw;
+    right: 3vw;
+    z-index: 10;
+    background-color: transparent;
+    font-size: 2vw;
+    border: none;
+    transition: 0.3s ease;
+}  
+.selectExitbtn2:hover{
+    scale: 1.2;
+}  
+.CheckoutBtn{
+    background-color: #151515;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2vw;
+    padding: 1vw 2vw;
+    margin: 0vw 7vw;
+    margin-top: 0.1vw;
+    transition: 0.3s ease;
+
+}
+.CheckoutBtn:hover{
+    background-color: #474747;
+    color: #fff;
+}
+.boxareaaa{
+    display: flex;
+    width: 39vw;  
+    margin: 3vw 0vw;  
+}
+.NameandPriceArea{
+    display: flex;
+    width: 20vw;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.deleteicon{
+    width: 2vw;
+    cursor: pointer;
+}
+.box1area{
+    border: solid 0.15vw #c8c8c8;
+    display: flex;
+    width: 7vw;
+    justify-content: space-between;
+    height: 3vw;
+    align-items: center;
+    font-size: 1.5vw;
+    padding: 0vw 1vw;
+}
+
+.box2area{
+    border: solid 0.15vw #c8c8c8;
+    width: 3vw;
+    height: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainboxareaa{
+    margin-top: 4vw;
+    margin-left: 2vw;
+    display: flex;
+    gap: 1vw;
+}
+.box1area p:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+.AboutSec{
+    height: 90vh;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10vh;
+    padding-left: 8vw;
+    position: relative;
+}
+
+
+.abouttitle{
+    font-size: 3vw;
+    font-weight: 100;
+    line-height: 0.1vw;
+    color: #151515;
+}
+
+.aboutinfo{
+    font-size: 1.8vw;
+    color: #151515;
+    width: 40vw;
+}
+
+.aboutstatusimg{
+    width: 30vw;
+}
+
+.aboutmainIMG{
+    position: absolute;
+    right: 5vw;
+    width: 37vw;
+}
+
+
+
+
+
+
+
+
+.ContactSec {
+    padding: 9rem;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    margin: 2rem auto;
+    border-radius: 8px;
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.contact-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.contact-content {
+    max-width: 500px;
+}
+
+.contact-content h3 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-content p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+}
+
+

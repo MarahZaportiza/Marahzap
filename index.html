@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaportiza - Perfume Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/mainlogo.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <!-- HEADER PART AREA -->
+    <header class="HeaderMain">
+        <nav class="NavMain">   
+            <img src="img/mainlogo.jpg" class="headerlogo">
+
+            <div class="navbuttons">
+                <a href="#herosection" class="navbtns">Home</a>
+                <a href="#shopsection" class="navbtns">Shop</a>
+                <a href="#aboutsection" class="navbtns">About</a>
+                <a href="#contactsection" class="navbtns">Contact</a>
+            </div>
+
+            <div class="topbuttons">
+                <button id="Shopbutton" class="topbtns"><img src="img/shopicon.png"></button>
+                <button class="topbtns"><img src="img/profileicon.png"></button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="MainArea">
+        <!-- HERO SECTION -->
+        <section id="herosection" class="HeroSec">
+        </section>
+
+        <!-- SHOP SECTION -->
+        <section id="shopsection" class="ShopSec">
+            <div class="shopnowimg">
+                <h2 class="shopnowtext">Shop Now!</h2>
+            </div>
+            <h2 class="shopnowlabel">Choose Your Perfume</h2>
+            
+            <div class="shopgridarea">
+    <div class="itembox"
+         data-name="Aqua Allegoria"
+         data-price="$20.00"
+         data-description="Fresh aquatic notes with a hint of citrus."
+         data-image="img/aquaperfume.png">
+        <img src="img/aquaperfume.png" class="productimg">
+        <p class="productnamee">Aqua Allegoria <br> $20.00</p>
+    </div>
+    <div class="itembox"
+         data-name="Eau De Perfume"
+         data-price="$20.00"
+         data-description="Classic floral fragrance perfect for daily wear."
+         data-image="img/EauDe.png">
+        <img src="img/EauDe.png" class="productimg">
+        <p class="productnamee">Eau De Perfume <br> $20.00</p>
+    </div>
+    <div class="itembox"
+         data-name="Coco"
+         data-price="$20.00"
+         data-description="Warm and spicy with hints of vanilla and musk."
+         data-image="img/Coco Perfume.png">
+        <img src="img/Coco Perfume.png" class="productimg">
+        <p class="productnamee">Coco <br> $20.00</p>
+    </div>
+    <div class="itembox"
+         data-name="Aqua Allegoria"
+         data-price="$20.00"
+         data-description="Fresh aquatic notes with a hint of citrus."
+         data-image="img/aquaperfume.png">
+        <img src="img/aquaperfume.png" class="productimg">
+        <p class="productnamee">Aqua Allegoria <br> $20.00</p>
+    </div>
+</div>
+
+
+ <!-- SELECT ITEM AREA -->
+<div id="selectitem" class="SelectItemArea hidden">
+    <button class="selectExitbtn" id="closeSelectBtn">X</button>
+    <div class="maincontentarea">
+        <span class="linedesign"></span>
+        <span class="displayareaaa">
+            <h3 id="selectName" class="selectname">Product Name</h3>
+            <p id="selectPrice" class="selectprice">$0.00</p>
+        </span>
+        <p class="selectsize">50ml</p>
+        <span class="linedesign"></span>
+        <p id="selectDescription" class="selecteddescription">Product description goes here...</p>
+        <button class="AddtoBagbtn">ADD TO BAG</button>
+    </div>
+    <img id="selectImage" class="selecteditemImg" src="img/default.png" alt="Selected Product Image">
+</div>
+
+
+            <!-- SIDE BAR AREA -->
+            <aside id="sideBarArea" class="asideareaItem">
+                <button class="selectExitbtn2">X</button>
+                <div class="maincontentarea">
+                    <h3 class="titlearea3">YOUR SHOPPING BAG</h3>
+                    <span class="linedesign"></span>
+                    
+                    <span class="boxareaaa">
+                        <div class="imgboxxx">
+                            <img class="selecteditemImg2" src="img/EauDe.png">
+                        </div>
+                        <div>
+                            <span class="NameandPriceArea">
+                                <p class="selectsize2">EauDe Perfume</p>
+                                <p class="selectprice">$20.00</p>
+                            </span>
+
+                            <div class="mainboxareaa">
+                                <div class="box1area">
+                                    <p>-</p><p>1</p><p>+</p>
+                                </div>
+                                <div class="box2area">
+                                    <img class="deleteicon" src="img/DeleteIcon.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                    
+                    <span class="linedesign"></span>
+                    <span class="displayareaaa">
+                        <p class="selectsize2">SUBTOTAL</p>
+                        <p class="selectprice">$20.00</p>
+                    </span>
+                    <button class="CheckoutBtn">CONTINUE TO CHECKOUT</button>
+                </div>
+            </aside>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="aboutsection" class="AboutSec">
+            <h2 class="abouttitle">About Us</h2>
+            <p class="aboutinfo">
+                Elegance in Every Scent
+                <br><br>At La Femme Perfume, we believe beauty is a feeling. Each fragrance is crafted to reflect femininity, confidence and timeless charm turning everyday moments into unforgettable impressions.
+                <br><br>Inspired by the modern woman’s journey, our products blend sophistication and emotion  transforming everyday moments into lasting impressions.
+            </p>
+            <img class="aboutstatusimg" src="img/aboutstatusimg.jpg">
+            <img class="aboutmainIMG" src="img/aboutimg.jpg">
+        </section>
+
+
+        
+      <section id="contactsection" class="ContactSec">
+  <div class="contact-container">
+    <div class="contact-image">
+        <img src="img/contactimage.png" alt="Perfume Bottle">
+    </div>
+    <div class="contact-content">
+        <h3>CONTACT US</h3>
+        <p>We are here to assist you with any inquiries and to help you discover the perfect scent experience!</p>
+        <div class="contact-info">
+            <p><img src="img/mailicon.png" class="icon"> <strong>marahzap@gmail.com</strong></p>
+            <p><img src="img/phoneicon.jpg" class="icon"> <strong>09066569980</strong></p>
+        </div>
+    </div>
+  </div>
+</section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
